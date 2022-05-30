@@ -36,9 +36,12 @@ namespace UserRegistrationProblem
             Console.WriteLine("Enter Your Passward2 Number :");
             string Passward2 = Console.ReadLine(); 
             Console.WriteLine(userRegestration.ValidatePassward2(Passward2));
-            Console.WriteLine("Enter Your Passward2 Number :");
+            Console.WriteLine("Enter Your Passward3 Number :");
             string Passward3 = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidatePassward3(Passward3));
+            Console.WriteLine("Enter Your Passward4 Number :");
+            string Passward4 = Console.ReadLine(); 
+            Console.WriteLine(userRegestration.ValidatePassward4(Passward4));
         }
     }
 
