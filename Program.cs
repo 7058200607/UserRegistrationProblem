@@ -28,6 +28,10 @@ namespace UserRegistrationProblem
             Console.WriteLine("Enter Your Phone Number :");
             string PhoneNumber = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidatePhoneNumber(PhoneNumber));
+
+            Console.WriteLine("Enter Your Passward1 Number :");
+            string Passward1 = Console.ReadLine();
+            Console.WriteLine(userRegestration.ValidatePassward1(Passward1));
         }
     }
 

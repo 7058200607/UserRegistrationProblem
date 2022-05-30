@@ -13,7 +13,9 @@ namespace UserRegistrationProblem
         public const string Regex_LastName = "^[A-Z]{1}[A-Za-z]{2,}$";
         public static string Regex_EmailId = "^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,5}$";
         public static string Regex_PhoneNumber = ("^\\+?[1-9][0-9]{7,14}$");
-       
+        
+        //for lower letters uc5
+        public static string Regex_Passward1 = "^(?=.*[a-z]).{8,}$";
 
         public bool ValidateFirstName(string firstName) 
         {
@@ -30,6 +32,10 @@ namespace UserRegistrationProblem
         public bool ValidatePhoneNumber(string Phonenumber)
         {
             return Regex.IsMatch(Phonenumber, Regex_PhoneNumber);
+        }
+        public bool ValidatePassward1(string passward1) 
+        {
+            return Regex.IsMatch(passward1, Regex_Passward1);
         }
     }
     
