@@ -17,6 +17,9 @@ namespace UserRegistrationProblem
             string FirstName = Console.ReadLine();
             Console.WriteLine(userRegestration.ValidateFirstName(FirstName));
 
+            Console.WriteLine("Enter Your Last Name :");
+            string LastName = Console.ReadLine();
+            Console.WriteLine(userRegestration.ValidateFirstName(LastName));
         }
 
     }
