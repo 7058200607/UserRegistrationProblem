@@ -19,6 +19,8 @@ namespace UserRegistrationProblem
 
         // Containing at least Upper letter in passward
         public static string Regex_Passward2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+        //Containing at least one Numeric Character
+        public static string Regex_Passward3 = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$";
 
 
         public bool ValidateFirstName(string firstName) 
@@ -44,6 +46,10 @@ namespace UserRegistrationProblem
         public bool ValidatePassward2(string passward2) 
         {
             return Regex.IsMatch(passward2, Regex_Passward2);
+        }
+        public bool ValidatePassward3(string passward3)
+        {
+            return Regex.IsMatch(passward3, Regex_Passward3);
         }
     }
 }
